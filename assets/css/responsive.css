@@ -1,0 +1,241 @@
+/* ==========================================================
+   Academic Portfolio Website
+   Responsive Stylesheet
+   Author : Kuldeep Yadav
+   Version: 1.0
+========================================================== */
+
+
+/* ==========================================================
+   Large Desktop
+   1400px and below
+========================================================== */
+
+@media (max-width: 1400px) {
+
+    .container {
+        max-width: 1140px;
+    }
+
+}
+
+
+/* ==========================================================
+   Laptop
+   1200px and below
+========================================================== */
+
+@media (max-width: 1200px) {
+
+    html {
+        font-size: 95%;
+    }
+
+    section {
+        padding: 80px 0;
+    }
+
+}
+
+
+/* ==========================================================
+   Tablet Landscape
+   992px and below
+========================================================== */
+
+@media (max-width: 992px) {
+
+    html {
+        font-size: 92%;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    .section-title {
+        margin-bottom: 45px;
+    }
+
+    .card-custom {
+        margin-bottom: 30px;
+    }
+
+}
+
+
+/* ==========================================================
+   Tablet Portrait
+   768px and below
+========================================================== */
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 90%;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .btn-custom,
+    .btn-outline-custom {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+}
+
+
+/* ==========================================================
+   Mobile Devices
+   576px and below
+========================================================== */
+
+@media (max-width: 576px) {
+
+    html {
+        font-size: 87%;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.35rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+
+/* ==========================================================
+   Small Mobile
+   400px and below
+========================================================== */
+
+@media (max-width: 400px) {
+
+    html {
+        font-size: 85%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-custom,
+    .btn-outline-custom {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+
+}
+
+
+/* ==========================================================
+   Placeholder Responsive Sections
+   (Will be expanded as we build each component.)
+========================================================== */
+
+
+/* ---------- Navigation ---------- */
+
+
+
+/* ---------- Hero Section ---------- */
+
+
+
+/* ---------- Research Section ---------- */
+
+
+
+/* ---------- Latest News ---------- */
+
+
+
+/* ---------- Publications ---------- */
+
+
+
+/* ---------- Statistics ---------- */
+
+
+
+/* ---------- Footer ---------- */
+
+
+
+/* ---------- About ---------- */
+
+
+
+/* ---------- Research ---------- */
+
+
+
+/* ---------- Projects ---------- */
+
+
+
+/* ---------- Teaching ---------- */
+
+
+
+/* ---------- Awards ---------- */
+
+
+
+/* ---------- CV ---------- */
+
+
+
+/* ---------- Gallery ---------- */
+
+
+
+/* ---------- Blog ---------- */
+
+
+
+/* ---------- Contact ---------- */
