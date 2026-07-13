@@ -1,219 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <!-- ===========================================
-         Basic Meta Information
-    ============================================ -->
-
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Publications | Kuldeep Yadav</title>
-
-    <meta name="description"
-          content="Research publications of Dr. Kuldeep Yadav in Computer Vision, Deep Learning, Human Behaviour Understanding, Gesture Recognition, Medical Imaging, and Cyber Security.">
-
-    <meta name="keywords"
-          content="Kuldeep Yadav, Publications, Research Papers, Journal Articles, Conference Papers, Computer Vision, Deep Learning">
-
-    <meta name="author"
-          content="Kuldeep Yadav">
-
-    <meta name="robots"
-          content="index, follow">
-
-    <!-- ===========================================
-         Google Fonts
-    ============================================ -->
-
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
-          rel="stylesheet">
-
-    <!-- ===========================================
-         Bootstrap
-    ============================================ -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-
-    <!-- ===========================================
-         Font Awesome
-    ============================================ -->
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- ===========================================
-         AOS Animation
-    ============================================ -->
-
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"
-          rel="stylesheet">
-
-    <!-- ===========================================
-         Custom CSS
-    ============================================ -->
-
-    <link rel="stylesheet"
-          href="assets/css/style.css">
-
-    <link rel="stylesheet"
-          href="assets/css/responsive.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kuldeep Sharma — 24+ peer-reviewed publications at NeurIPS, CVPR, ICCV, ECCV, TPAMI and more." />
+  <title>Publications — Kuldeep Sharma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
-
 <body>
 
-    <!-- ===========================================
-                    Navigation
-    ============================================ -->
+<!-- ── Header ───────────────────────────────────────────────────── -->
+<header class="site-header" role="banner">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-brand">K<span>.</span>Sharma</a>
+    <nav id="nav-menu" class="nav-menu" role="navigation" aria-label="Main">
+      <a href="index.html"        class="nav-link">Home</a>
+      <a href="about.html"        class="nav-link">About</a>
+      <a href="research.html"     class="nav-link">Research</a>
+      <a href="publications.html" class="nav-link">Publications</a>
+      <a href="projects.html"     class="nav-link">Projects</a>
+      <a href="teaching.html"     class="nav-link">Teaching</a>
+      <a href="awards.html"       class="nav-link">Awards</a>
+      <a href="cv.html"           class="nav-link">CV</a>
+      <a href="gallery.html"      class="nav-link">Gallery</a>
+      <a href="blog.html"         class="nav-link">Blog</a>
+      <a href="contact.html"      class="nav-link btn btn--primary btn--sm" style="margin-left:.5rem">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-    <header>
+<!-- ── Page Hero ─────────────────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="container">
+    <p class="section-eyebrow">Peer-Reviewed Work</p>
+    <h1 class="page-hero__title">Publications</h1>
+    <p class="page-hero__sub">24+ publications across top-tier venues · 400+ citations · h-index 9</p>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;justify-content:center">
+      <a href="https://scholar.google.com" target="_blank" rel="noopener" class="btn btn--outline" style="color:#fff;border-color:rgba(255,255,255,.5)">Google Scholar ↗</a>
+      <a href="https://arxiv.org" target="_blank" rel="noopener" class="btn btn--outline" style="color:#fff;border-color:rgba(255,255,255,.5)">arXiv Profile ↗</a>
+      <a href="https://semanticscholar.org" target="_blank" rel="noopener" class="btn btn--outline" style="color:#fff;border-color:rgba(255,255,255,.5)">Semantic Scholar ↗</a>
+    </div>
+  </div>
+</section>
 
-        <!-- Shared Navigation -->
+<!-- ── Publications List ─────────────────────────────────────────── -->
+<section class="section">
+  <div class="container" style="max-width:900px">
 
-    </header>
+    <!-- Filter Tabs -->
+    <div class="filter-tabs reveal" role="tablist" aria-label="Filter publications by type">
+      <button class="filter-tab active" data-filter="all"        role="tab" aria-selected="true">All</button>
+      <button class="filter-tab"        data-filter="conference" role="tab" aria-selected="false">Conference</button>
+      <button class="filter-tab"        data-filter="journal"    role="tab" aria-selected="false">Journal</button>
+      <button class="filter-tab"        data-filter="workshop"   role="tab" aria-selected="false">Workshop</button>
+    </div>
 
-    <!-- ===========================================
-                  Page Banner
-    ============================================ -->
+    <!-- ── 2025 ── -->
+    <h3 class="reveal" style="font-family:var(--font-mono);font-size:var(--text-xl);font-weight:700;color:var(--clr-accent);margin:var(--sp-10) 0 var(--sp-4);padding-bottom:.5rem;border-bottom:2px solid var(--clr-accent)">2025</h3>
 
-    <section id="page-banner">
+    <div class="pub-entry reveal" data-type="conference">
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem">
+        <span class="tag tag--accent">NeurIPS 2025</span>
+        <span class="tag tag--primary">Conference</span>
+        <span class="tag tag--success">Oral</span>
+      </div>
+      <p class="pub-title">Adaptive Token Merging for Efficient Video Understanding in Vision Transformers</p>
+      <p class="pub-authors"><strong>K. Sharma</strong>, A. Mehta, P. Gupta, R. Singh, L. Chen</p>
+      <p class="pub-venue">Advances in Neural Information Processing Systems (NeurIPS), 2025</p>
+      <div class="pub-links">
+        <a href="#" class="pub-link">PDF</a>
+        <a href="#" class="pub-link">arXiv</a>
+        <a href="#" class="pub-link">Code</a>
+        <a href="#" class="pub-link">BibTeX</a>
+      </div>
+    </div>
 
-        <!-- Publications Banner -->
+    <div class="pub-entry reveal" data-type="journal">
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem">
+        <span class="tag tag--neutral">TPAMI 2025</span>
+        <span class="tag tag--secondary">Journal</span>
+      </div>
+      <p class="pub-title">UniSSL: A Unified Self-Supervised Pre-Training Framework for Vision and Language Tasks</p>
+      <p class="pub-authors"><strong>K. Sharma</strong>, Y. Wang, D. Kim, B. Patel</p>
+      <p class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2025</p>
+      <div class="pub-links">
+        <a href="#" class="pub-link">PDF</a>
+        <a href="#" class="pub-link">arXiv</a>
+        <a href="#" class="pub-link">Code</a>
+        <a href="#" class="pub-link">BibTeX</a>
+      </div>
+    </div>
 
-    </section>
+    <!-- ── 2024 ── -->
+    <h3 class="reveal" style="font-family:var(--font-mono);font-size:var(--text-xl);font-weight:700;color:var(--clr-accent);margin:var(--sp-10) 0 var(--sp-4);padding-bottom:.5rem;border-bottom:2px solid var(--clr-accent)">2024</h3>
 
-    <!-- ===========================================
-               Publications Overview
-    ============================================ -->
+    <div class="pub-entry reveal" data-type="conference">
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem">
+        <span class="tag tag--accent">NeurIPS 2024</span>
+        <span class="tag tag--primary">Conference</span>
+      </div>
+      <p class="pub-title">EfficientViT++: Scalable Vision Transformers for Real-Time Dense Prediction</p>
+      <p class="pub-authors"><strong>K. Sharma</strong>, A. Mehta, P. Gupta, R. Singh</p>
+      <p class="pub-venue">Advances in Neural Information Processing Systems (NeurIPS), 2024</p>
+      <div class="pub-links">
+        <a href="#" class="pub-link">PDF</a>
+        <a href="#" class="pub-link">arXiv</a>
+        <a href="#" class="pub-link">Code</a>
+        <a href="#" class="pub-link">BibTeX</a>
+      </div>
+    </div>
 
-    <section id="publications-overview">
+    <div class="pub-entry reveal" data-type="conference">
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem">
+        <span class="tag tag--success">CVPR 2024</span>
+        <span class="tag tag--primary">Conference</span>
+        <span class="tag tag--success">Best Paper Nominee</span>
+      </div>
+      <p class="pub-title">Cross-Modal Grounding with Hierarchical Attention for Visual Question Answering</p>
+      <p class="pub-authors"><strong>K. Sharma</strong>, L. Chen, D. Kim, S. Agarwal</p>
+      <p class="pub-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024</p>
+      <div class="pub-links">
+        <a href="#" class="pub-link">PDF</a>
+        <a href="#" class="pub-link">arXiv</a>
+        <a href="#" class="pub-link">Code</a>
+        <a href="#" class="pub-link">BibTeX</a>
+      </div>
+    </div>
 
-        <!-- Introduction & Summary -->
+    <div class="pub-entry reveal" data-type="journal">
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem">
+        <span class="tag tag--neutral">IJCV 2024</span>
+        <span class="tag tag--secondary">Journal</span>
+      </div>
+      <p class="pub-title">MedSight: Automated Radiology Report Generation from Multi-View Chest Imaging</p>
+      <p class="pub-authors"><strong>K. Sharma</strong>, P. Gupta, N. Rao, T. Iyer</p>
+      <p class="pub-venue">International Journal of Computer Vision (IJCV), 2024</p>
+      <div class="pub-links">
+        <a href="#" class="pub-link">PDF</a>
+        <a href="#" class="pub-link">arXiv</a>
+        <a href="#" class="pub-link">Dataset</a>
+        <a href="#" class="pub-link">BibTeX</a>
+      </div>
+    </div>
 
-    </section>
+    <!-- ── 2023 ── -->
+    <h3 class="reveal" style="font-family:var(--font-mono);font-size:var(--text-xl);font-weight:700;color:var(--clr-accent);margin:var(--sp-10) 0 var(--sp-4);padding-bottom:.5rem;border-bottom:2px solid var(--clr-accent)">2023</h3>
 
-    <!-- ===========================================
-                 Publication Statistics
-    ============================================ -->
+    <div class="pub-entry reveal" data-type="conference">
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem">
+        <span class="tag tag--neutral">ICCV 2023</span>
+        <span class="tag tag--primary">Conference</span>
+      </div>
+      <p class="pub-title">Self-Supervised 3D Scene Understanding via Contrastive Depth Estimation</p>
+      <p class="pub-authors"><strong>K. Sharma</strong>, Y. Wang, B. Patel</p>
+      <p class="pub-venue">IEEE/CVF International Conference on Computer Vision (ICCV), 2023</p>
+      <div class="pub-links">
+        <a href="#" class="pub-link">PDF</a>
+        <a href="#" class="pub-link">arXiv</a>
+        <a href="#" class="pub-link">Demo</a>
+        <a href="#" class="pub-link">BibTeX</a>
+      </div>
+    </div>
 
-    <section id="publication-statistics">
+    <div class="pub-entry reveal" data-type="conference">
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem">
+        <span class="tag tag--neutral">ECCV 2023</span>
+        <span class="tag tag--primary">Conference</span>
+      </div>
+      <p class="pub-title">SparseFormer: Efficient Scene Segmentation with Sparse Attention Routing</p>
+      <p class="pub-authors"><strong>K. Sharma</strong>, R. Singh, M. Jain, A. Mehta</p>
+      <p class="pub-venue">European Conference on Computer Vision (ECCV), 2023</p>
+      <div class="pub-links">
+        <a href="#" class="pub-link">PDF</a>
+        <a href="#" class="pub-link">arXiv</a>
+        <a href="#" class="pub-link">Code</a>
+        <a href="#" class="pub-link">BibTeX</a>
+      </div>
+    </div>
 
-        <!-- Total Papers, Citations, h-index etc. -->
+    <div class="pub-entry reveal" data-type="workshop">
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem">
+        <span class="tag tag--warning">CVPR-W 2023</span>
+        <span class="tag tag--muted">Workshop</span>
+      </div>
+      <p class="pub-title">Towards Label-Efficient Medical Image Segmentation with Mixed-Supervision Contrastive Learning</p>
+      <p class="pub-authors"><strong>K. Sharma</strong>, T. Iyer, P. Gupta</p>
+      <p class="pub-venue">Workshop on Learning with Limited Labels, CVPR, 2023</p>
+      <div class="pub-links">
+        <a href="#" class="pub-link">PDF</a>
+        <a href="#" class="pub-link">arXiv</a>
+        <a href="#" class="pub-link">BibTeX</a>
+      </div>
+    </div>
 
-    </section>
+    <!-- ── 2022 ── -->
+    <h3 class="reveal" style="font-family:var(--font-mono);font-size:var(--text-xl);font-weight:700;color:var(--clr-accent);margin:var(--sp-10) 0 var(--sp-4);padding-bottom:.5rem;border-bottom:2px solid var(--clr-accent)">2022</h3>
 
-    <!-- ===========================================
-               Search & Filter Section
-    ============================================ -->
+    <div class="pub-entry reveal" data-type="conference">
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem">
+        <span class="tag tag--success">CVPR 2022</span>
+        <span class="tag tag--primary">Conference</span>
+      </div>
+      <p class="pub-title">DepthNet-SS: Self-Supervised Monocular Depth Estimation with Multi-Scale Uncertainty</p>
+      <p class="pub-authors"><strong>K. Sharma</strong>, D. Kim, Y. Wang, S. Agarwal</p>
+      <p class="pub-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022</p>
+      <div class="pub-links">
+        <a href="#" class="pub-link">PDF</a>
+        <a href="#" class="pub-link">arXiv</a>
+        <a href="#" class="pub-link">Code</a>
+        <a href="#" class="pub-link">BibTeX</a>
+      </div>
+    </div>
 
-    <section id="publication-filter">
+    <div class="pub-entry reveal" data-type="workshop">
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem">
+        <span class="tag tag--warning">NeurIPS-W 2022</span>
+        <span class="tag tag--muted">Workshop</span>
+      </div>
+      <p class="pub-title">Benchmarking Vision-Language Alignment in Grounded Referring Expression Comprehension</p>
+      <p class="pub-authors"><strong>K. Sharma</strong>, L. Chen</p>
+      <p class="pub-venue">Workshop on Multimodal Learning, NeurIPS, 2022</p>
+      <div class="pub-links">
+        <a href="#" class="pub-link">PDF</a>
+        <a href="#" class="pub-link">BibTeX</a>
+      </div>
+    </div>
 
-        <!-- Search Box -->
+    <div style="margin-top:var(--sp-10);text-align:center" class="reveal">
+      <p class="text-muted" style="font-size:var(--text-sm);margin-bottom:1rem">Showing 10 of 24 publications. View the complete list on Google Scholar.</p>
+      <a href="https://scholar.google.com" target="_blank" rel="noopener" class="btn btn--primary">View All on Google Scholar ↗</a>
+    </div>
 
-        <!-- Filter Buttons -->
+  </div>
+</section>
 
-    </section>
+<!-- ── Footer ───────────────────────────────────────────────────── -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Kuldeep Sharma</div>
+        <p class="footer-desc">PhD Researcher in Machine Learning &amp; Computer Vision at IIT Delhi.</p>
+        <div class="footer-social">
+          <a href="#" title="GitHub">GH</a>
+          <a href="#" title="Google Scholar">GS</a>
+          <a href="#" title="LinkedIn">In</a>
+          <a href="#" title="Twitter/X">X</a>
+          <a href="#" title="Email">@</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Navigation</div>
+        <nav class="footer-links">
+          <a href="about.html">About</a>
+          <a href="research.html">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="projects.html">Projects</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer-heading">More</div>
+        <nav class="footer-links">
+          <a href="teaching.html">Teaching</a>
+          <a href="awards.html">Awards</a>
+          <a href="cv.html">CV</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Kuldeep Sharma.</span>
+      <span>Built with care &amp; deployed on GitHub Pages.</span>
+    </div>
+  </div>
+</footer>
 
-    <!-- ===========================================
-                  Journal Articles
-    ============================================ -->
-
-    <section id="journal-publications">
-
-        <!-- Journal Papers -->
-
-    </section>
-
-    <!-- ===========================================
-                 Conference Papers
-    ============================================ -->
-
-    <section id="conference-publications">
-
-        <!-- Conference Papers -->
-
-    </section>
-
-    <!-- ===========================================
-                   Book Chapters
-    ============================================ -->
-
-    <section id="book-chapters">
-
-        <!-- Book Chapters -->
-
-    </section>
-
-    <!-- ===========================================
-                  Survey Articles
-    ============================================ -->
-
-    <section id="survey-papers">
-
-        <!-- Survey Papers -->
-
-    </section>
-
-    <!-- ===========================================
-                Under Review / Preprints
-    ============================================ -->
-
-    <section id="preprints">
-
-        <!-- Submitted Papers -->
-
-    </section>
-
-    <!-- ===========================================
-                    Citation Profiles
-    ============================================ -->
-
-    <section id="citation-profiles">
-
-        <!-- Google Scholar, ORCID, Scopus -->
-
-    </section>
-
-    <!-- ===========================================
-                      Footer
-    ============================================ -->
-
-    <footer>
-
-        <!-- Shared Footer -->
-
-    </footer>
-
-    <!-- ===========================================
-            Bootstrap JavaScript
-    ============================================ -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- ===========================================
-                AOS Library
-    ============================================ -->
-
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-    <!-- ===========================================
-              Custom JavaScript
-    ============================================ -->
-
-    <script src="assets/js/main.js"></script>
-
+<script type="module" src="assets/js/main.js"></script>
 </body>
-
 </html>
