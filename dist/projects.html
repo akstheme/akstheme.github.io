@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kuldeep Sharma's research and open-source projects in ML, Computer Vision, and AI tooling." />
+  <title>Projects — Kuldeep Sharma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+<!-- ── Header ───────────────────────────────────────────────────── -->
+<header class="site-header" role="banner">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-brand">K<span>.</span>Sharma</a>
+    <nav id="nav-menu" class="nav-menu" role="navigation" aria-label="Main">
+      <a href="index.html"        class="nav-link">Home</a>
+      <a href="about.html"        class="nav-link">About</a>
+      <a href="research.html"     class="nav-link">Research</a>
+      <a href="publications.html" class="nav-link">Publications</a>
+      <a href="projects.html"     class="nav-link">Projects</a>
+      <a href="teaching.html"     class="nav-link">Teaching</a>
+      <a href="awards.html"       class="nav-link">Awards</a>
+      <a href="cv.html"           class="nav-link">CV</a>
+      <a href="gallery.html"      class="nav-link">Gallery</a>
+      <a href="blog.html"         class="nav-link">Blog</a>
+      <a href="contact.html"      class="nav-link btn btn--primary btn--sm" style="margin-left:.5rem">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ── Page Hero ─────────────────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="container">
+    <p class="section-eyebrow">Things I've Built</p>
+    <h1 class="page-hero__title">Projects</h1>
+    <p class="page-hero__sub">Research prototypes, open-source libraries, and developer tools spanning ML, vision, and AI infrastructure.</p>
+  </div>
+</section>
+
+<!-- ── Projects Grid ─────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs reveal" role="tablist" aria-label="Filter projects by category">
+      <button class="filter-tab active" data-filter="all"         role="tab" aria-selected="true">All</button>
+      <button class="filter-tab"        data-filter="research"    role="tab" aria-selected="false">Research</button>
+      <button class="filter-tab"        data-filter="open-source" role="tab" aria-selected="false">Open Source</button>
+      <button class="filter-tab"        data-filter="tool"        role="tab" aria-selected="false">Tools</button>
+    </div>
+
+    <div class="grid-3" style="margin-top:var(--sp-8)">
+
+      <!-- Project 1 -->
+      <div class="card reveal" data-type="research">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600" alt="MedSight AI project" />
+        </div>
+        <div class="card-body">
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span class="tag tag--primary">Medical AI</span>
+            <span class="tag tag--accent">Active</span>
+          </div>
+          <h3 style="font-family:var(--font-sans);font-size:var(--text-md);font-weight:700;margin-bottom:.5rem">MedSight AI</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.6;margin-bottom:1rem">Automated radiology report generation from chest X-rays using vision-language models with clinical accuracy benchmarks. Achieves state-of-the-art BLEU-4 on MIMIC-CXR.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1rem">
+            <span class="tag">PyTorch</span><span class="tag">ViT</span><span class="tag">MIMIC-CXR</span>
+          </div>
+          <div class="pub-links">
+            <a href="#" class="pub-link">GitHub</a>
+            <a href="#" class="pub-link">Paper</a>
+            <a href="#" class="pub-link">Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card reveal" data-type="research">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=600" alt="DepthNet project" />
+        </div>
+        <div class="card-body">
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span class="tag tag--primary">3D Vision</span>
+            <span class="tag tag--neutral">Complete</span>
+          </div>
+          <h3 style="font-family:var(--font-sans);font-size:var(--text-md);font-weight:700;margin-bottom:.5rem">DepthNet-SS</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.6;margin-bottom:1rem">Self-supervised monocular depth estimation achieving SOTA results on KITTI and NYU Depth v2 benchmarks. 3.1% Abs-Rel error on KITTI.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1rem">
+            <span class="tag">PyTorch</span><span class="tag">KITTI</span><span class="tag">Depth</span>
+          </div>
+          <div class="pub-links">
+            <a href="#" class="pub-link">GitHub</a>
+            <a href="#" class="pub-link">Paper</a>
+            <a href="#" class="pub-link">Models</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card reveal" data-type="open-source">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=600" alt="OpenVLM project" />
+        </div>
+        <div class="card-body">
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span class="tag tag--success">Open Source</span>
+            <span class="tag tag--accent">Active</span>
+          </div>
+          <h3 style="font-family:var(--font-sans);font-size:var(--text-md);font-weight:700;margin-bottom:.5rem">OpenVLM Toolkit</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.6;margin-bottom:1rem">A modular Python library for vision-language model experimentation with plug-and-play encoders, decoders, and evaluation harnesses. 1.2k GitHub stars.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1rem">
+            <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">HuggingFace</span>
+          </div>
+          <div class="pub-links">
+            <a href="#" class="pub-link">GitHub</a>
+            <a href="#" class="pub-link">Docs</a>
+            <a href="#" class="pub-link">PyPI</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="card reveal" data-type="research">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AdapTok project" />
+        </div>
+        <div class="card-body">
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span class="tag tag--primary">Model Efficiency</span>
+            <span class="tag tag--accent">Active</span>
+          </div>
+          <h3 style="font-family:var(--font-sans);font-size:var(--text-md);font-weight:700;margin-bottom:.5rem">AdapTok</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.6;margin-bottom:1rem">Dynamic token merging for video transformers. Reduces FLOPs by 65% with &lt;1% accuracy drop on Kinetics-400, SSv2, and ActivityNet. NeurIPS 2025 paper.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1rem">
+            <span class="tag">Video</span><span class="tag">Transformers</span><span class="tag">Efficiency</span>
+          </div>
+          <div class="pub-links">
+            <a href="#" class="pub-link">GitHub</a>
+            <a href="#" class="pub-link">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="card reveal" data-type="open-source">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=600" alt="SparseFormer project" />
+        </div>
+        <div class="card-body">
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span class="tag tag--success">Open Source</span>
+            <span class="tag tag--neutral">Complete</span>
+          </div>
+          <h3 style="font-family:var(--font-sans);font-size:var(--text-md);font-weight:700;margin-bottom:.5rem">SparseFormer</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.6;margin-bottom:1rem">ECCV 2023 codebase for efficient scene segmentation with sparse attention routing. Includes pre-trained weights for ADE20K and Cityscapes. 800+ stars.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1rem">
+            <span class="tag">Segmentation</span><span class="tag">Cityscapes</span><span class="tag">ADE20K</span>
+          </div>
+          <div class="pub-links">
+            <a href="#" class="pub-link">GitHub</a>
+            <a href="#" class="pub-link">Paper</a>
+            <a href="#" class="pub-link">Weights</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="card reveal" data-type="tool">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="VizTracker project" />
+        </div>
+        <div class="card-body">
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span class="tag tag--warning">Tool</span>
+            <span class="tag tag--accent">Active</span>
+          </div>
+          <h3 style="font-family:var(--font-sans);font-size:var(--text-md);font-weight:700;margin-bottom:.5rem">VizTracker</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.6;margin-bottom:1rem">Lightweight experiment tracking dashboard for deep learning research. Supports real-time loss curves, gradient histograms, and activation maps via a simple Python API. 500+ users.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1rem">
+            <span class="tag">Python</span><span class="tag">Dashboard</span><span class="tag">Experiment Tracking</span>
+          </div>
+          <div class="pub-links">
+            <a href="#" class="pub-link">GitHub</a>
+            <a href="#" class="pub-link">Docs</a>
+            <a href="#" class="pub-link">Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="card reveal" data-type="tool">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=600" alt="BenchKit project" />
+        </div>
+        <div class="card-body">
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span class="tag tag--warning">Tool</span>
+            <span class="tag tag--neutral">Archived</span>
+          </div>
+          <h3 style="font-family:var(--font-sans);font-size:var(--text-md);font-weight:700;margin-bottom:.5rem">BenchKit</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.6;margin-bottom:1rem">A standardized benchmarking harness for vision models across ImageNet, COCO, ADE20K, and custom datasets. Supports automated leaderboard submissions and reproducibility checks.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1rem">
+            <span class="tag">Python</span><span class="tag">COCO</span><span class="tag">ImageNet</span>
+          </div>
+          <div class="pub-links">
+            <a href="#" class="pub-link">GitHub</a>
+            <a href="#" class="pub-link">Docs</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 8 -->
+      <div class="card reveal" data-type="open-source">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&w=600" alt="UniSSL project" />
+        </div>
+        <div class="card-body">
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span class="tag tag--success">Open Source</span>
+            <span class="tag tag--accent">Active</span>
+          </div>
+          <h3 style="font-family:var(--font-sans);font-size:var(--text-md);font-weight:700;margin-bottom:.5rem">UniSSL</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.6;margin-bottom:1rem">Official code for the TPAMI 2025 paper on unified self-supervised pre-training. Includes pre-trained ViT-B/L checkpoints, fine-tuning scripts, and reproducibility notebooks.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1rem">
+            <span class="tag">SSL</span><span class="tag">MAE</span><span class="tag">CLIP</span>
+          </div>
+          <div class="pub-links">
+            <a href="#" class="pub-link">GitHub</a>
+            <a href="#" class="pub-link">Paper</a>
+            <a href="#" class="pub-link">Checkpoints</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ───────────────────────────────────────────────────── -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Kuldeep Sharma</div>
+        <p class="footer-desc">PhD Researcher in Machine Learning &amp; Computer Vision at IIT Delhi.</p>
+        <div class="footer-social">
+          <a href="#" title="GitHub">GH</a>
+          <a href="#" title="Google Scholar">GS</a>
+          <a href="#" title="LinkedIn">In</a>
+          <a href="#" title="Twitter/X">X</a>
+          <a href="#" title="Email">@</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Navigation</div>
+        <nav class="footer-links">
+          <a href="about.html">About</a>
+          <a href="research.html">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="projects.html">Projects</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer-heading">More</div>
+        <nav class="footer-links">
+          <a href="teaching.html">Teaching</a>
+          <a href="awards.html">Awards</a>
+          <a href="cv.html">CV</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Kuldeep Sharma.</span>
+      <span>Built with care &amp; deployed on GitHub Pages.</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

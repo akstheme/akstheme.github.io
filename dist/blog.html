@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kuldeep Sharma's blog — articles on Machine Learning, Research Notes, Tutorials, and PhD life." />
+  <title>Blog — Kuldeep Sharma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+<!-- ── Header ───────────────────────────────────────────────────── -->
+<header class="site-header" role="banner">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-brand">K<span>.</span>Sharma</a>
+    <nav id="nav-menu" class="nav-menu" role="navigation" aria-label="Main">
+      <a href="index.html"        class="nav-link">Home</a>
+      <a href="about.html"        class="nav-link">About</a>
+      <a href="research.html"     class="nav-link">Research</a>
+      <a href="publications.html" class="nav-link">Publications</a>
+      <a href="projects.html"     class="nav-link">Projects</a>
+      <a href="teaching.html"     class="nav-link">Teaching</a>
+      <a href="awards.html"       class="nav-link">Awards</a>
+      <a href="cv.html"           class="nav-link">CV</a>
+      <a href="gallery.html"      class="nav-link">Gallery</a>
+      <a href="blog.html"         class="nav-link">Blog</a>
+      <a href="contact.html"      class="nav-link btn btn--primary btn--sm" style="margin-left:.5rem">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ── Page Hero ─────────────────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="container">
+    <p class="section-eyebrow">Writing &amp; Thoughts</p>
+    <h1 class="page-hero__title">Blog</h1>
+    <p class="page-hero__sub">Deep dives into ML research, practical tutorials, research notes, and reflections on life in academia.</p>
+  </div>
+</section>
+
+<!-- ── Blog Listing ──────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+
+    <!-- Search Bar -->
+    <div class="blog-search-wrap reveal" style="display:flex;align-items:center;gap:.75rem;background:var(--clr-surface);border:1px solid var(--clr-border);border-radius:var(--radius-lg);padding:.65rem 1rem;max-width:480px;margin-bottom:var(--sp-6)">
+      <span class="blog-search-icon" style="font-size:1.1rem;opacity:.5" aria-hidden="true">🔍</span>
+      <input id="blog-search" type="search" placeholder="Search articles…" aria-label="Search blog articles"
+             style="border:none;outline:none;background:transparent;font-family:var(--font-sans);font-size:var(--text-sm);color:var(--clr-text);width:100%;caret-color:var(--clr-accent)" />
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs reveal" role="tablist" aria-label="Filter blog posts by category">
+      <button class="filter-tab active" data-filter="all"             role="tab" aria-selected="true">All</button>
+      <button class="filter-tab"        data-filter="ml"              role="tab" aria-selected="false">Machine Learning</button>
+      <button class="filter-tab"        data-filter="research-notes"  role="tab" aria-selected="false">Research Notes</button>
+      <button class="filter-tab"        data-filter="tutorial"        role="tab" aria-selected="false">Tutorials</button>
+      <button class="filter-tab"        data-filter="career"          role="tab" aria-selected="false">Career</button>
+    </div>
+
+    <!-- Blog Cards Grid -->
+    <div class="grid-auto" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--sp-6);margin-top:var(--sp-8)">
+
+      <!-- Post 1 -->
+      <article class="blog-card card reveal" data-type="ml">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Understanding Attention in Vision Transformers" />
+        </div>
+        <div class="card-body">
+          <div class="blog-meta" style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">Jun 15, 2025</span>
+            <span style="color:var(--clr-border)">·</span>
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">8 min read</span>
+            <span class="tag tag--primary" style="font-size:.65rem">Machine Learning</span>
+          </div>
+          <h3 style="font-family:var(--font-serif);font-size:var(--text-lg);font-weight:700;line-height:1.3;margin-bottom:.6rem">Understanding Attention Heads in Vision Transformers: What Are They Really Learning?</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.7;margin-bottom:1rem">A deep dive into the attention maps of ViT models, visualization techniques, and what different heads specialize in — from edges and textures to high-level semantic concepts.</p>
+          <a href="#" class="btn btn--ghost" style="padding-left:0;font-size:var(--text-sm)">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="blog-card card reveal" data-type="tutorial">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Self-supervised learning tutorial" />
+        </div>
+        <div class="card-body">
+          <div class="blog-meta" style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">May 28, 2025</span>
+            <span style="color:var(--clr-border)">·</span>
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">12 min read</span>
+            <span class="tag tag--success" style="font-size:.65rem">Tutorial</span>
+          </div>
+          <h3 style="font-family:var(--font-serif);font-size:var(--text-lg);font-weight:700;line-height:1.3;margin-bottom:.6rem">Self-Supervised Learning from Scratch: Implementing SimCLR in PyTorch</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.7;margin-bottom:1rem">Step-by-step tutorial building a complete SimCLR pre-training pipeline, covering augmentation strategies, projection heads, the NT-Xent loss, and linear evaluation protocol.</p>
+          <a href="#" class="btn btn--ghost" style="padding-left:0;font-size:var(--text-sm)">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="blog-card card reveal" data-type="research-notes">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=600" alt="NeurIPS 2024 conference notes" />
+        </div>
+        <div class="card-body">
+          <div class="blog-meta" style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">Dec 18, 2024</span>
+            <span style="color:var(--clr-border)">·</span>
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">6 min read</span>
+            <span class="tag tag--neutral" style="font-size:.65rem">Research Notes</span>
+          </div>
+          <h3 style="font-family:var(--font-serif);font-size:var(--text-lg);font-weight:700;line-height:1.3;margin-bottom:.6rem">NeurIPS 2024: My Top 10 Papers and What They Mean for Vision Research</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.7;margin-bottom:1rem">Notes from Vancouver — the trends I noticed, the papers that surprised me, and where I think the field is heading in 2025 and beyond.</p>
+          <a href="#" class="btn btn--ghost" style="padding-left:0;font-size:var(--text-sm)">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Post 4 -->
+      <article class="blog-card card reveal" data-type="career">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600" alt="PhD journey reflections" />
+        </div>
+        <div class="card-body">
+          <div class="blog-meta" style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">Nov 5, 2024</span>
+            <span style="color:var(--clr-border)">·</span>
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">10 min read</span>
+            <span class="tag tag--warning" style="font-size:.65rem">Career</span>
+          </div>
+          <h3 style="font-family:var(--font-serif);font-size:var(--text-lg);font-weight:700;line-height:1.3;margin-bottom:.6rem">2 Years into My PhD: Lessons Learned, Mistakes Made, and What I'd Do Differently</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.7;margin-bottom:1rem">Honest reflections on the highs and lows of PhD research — managing imposter syndrome, picking research problems, advisor relationships, and maintaining mental health.</p>
+          <a href="#" class="btn btn--ghost" style="padding-left:0;font-size:var(--text-sm)">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Post 5 -->
+      <article class="blog-card card reveal" data-type="tutorial">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Efficient fine-tuning tutorial" />
+        </div>
+        <div class="card-body">
+          <div class="blog-meta" style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">Sep 20, 2024</span>
+            <span style="color:var(--clr-border)">·</span>
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">15 min read</span>
+            <span class="tag tag--success" style="font-size:.65rem">Tutorial</span>
+          </div>
+          <h3 style="font-family:var(--font-serif);font-size:var(--text-lg);font-weight:700;line-height:1.3;margin-bottom:.6rem">Parameter-Efficient Fine-Tuning: A Practical Guide to LoRA, QLoRA, and Adapters</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.7;margin-bottom:1rem">When GPU memory is your bottleneck, PEFT methods are a game-changer. This guide explains the math, the tradeoffs, and the code for fine-tuning large models on a single GPU.</p>
+          <a href="#" class="btn btn--ghost" style="padding-left:0;font-size:var(--text-sm)">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Post 6 -->
+      <article class="blog-card card reveal" data-type="ml">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Diffusion models explained" />
+        </div>
+        <div class="card-body">
+          <div class="blog-meta" style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">Jul 12, 2024</span>
+            <span style="color:var(--clr-border)">·</span>
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">11 min read</span>
+            <span class="tag tag--primary" style="font-size:.65rem">Machine Learning</span>
+          </div>
+          <h3 style="font-family:var(--font-serif);font-size:var(--text-lg);font-weight:700;line-height:1.3;margin-bottom:.6rem">Diffusion Models Demystified: From DDPM to Stable Diffusion Without the Handwaving</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.7;margin-bottom:1rem">A rigorous yet accessible walkthrough of the score-matching framework, the denoising objective, and how classifier-free guidance enables controllable high-quality image generation.</p>
+          <a href="#" class="btn btn--ghost" style="padding-left:0;font-size:var(--text-sm)">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Post 7 -->
+      <article class="blog-card card reveal" data-type="research-notes">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Reading papers efficiently" />
+        </div>
+        <div class="card-body">
+          <div class="blog-meta" style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">Apr 3, 2024</span>
+            <span style="color:var(--clr-border)">·</span>
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">5 min read</span>
+            <span class="tag tag--neutral" style="font-size:.65rem">Research Notes</span>
+          </div>
+          <h3 style="font-family:var(--font-serif);font-size:var(--text-lg);font-weight:700;line-height:1.3;margin-bottom:.6rem">How I Read 5+ Papers Per Week Without Burning Out</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.7;margin-bottom:1rem">My three-pass reading strategy, note-taking system in Obsidian, and how I connect ideas across papers to build genuine research intuition over time.</p>
+          <a href="#" class="btn btn--ghost" style="padding-left:0;font-size:var(--text-sm)">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Post 8 -->
+      <article class="blog-card card reveal" data-type="career">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Google PhD Fellowship advice" />
+        </div>
+        <div class="card-body">
+          <div class="blog-meta" style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">Jun 1, 2025</span>
+            <span style="color:var(--clr-border)">·</span>
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">9 min read</span>
+            <span class="tag tag--warning" style="font-size:.65rem">Career</span>
+          </div>
+          <h3 style="font-family:var(--font-serif);font-size:var(--text-lg);font-weight:700;line-height:1.3;margin-bottom:.6rem">How I Won the Google PhD Fellowship: Application Strategy and Advice</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.7;margin-bottom:1rem">The research statement that worked, what reviewers look for, common mistakes to avoid, and the email I sent that made a difference — a transparent guide from a 2025 recipient.</p>
+          <a href="#" class="btn btn--ghost" style="padding-left:0;font-size:var(--text-sm)">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Post 9 -->
+      <article class="blog-card card reveal" data-type="ml">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Medical AI blog post" />
+        </div>
+        <div class="card-body">
+          <div class="blog-meta" style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">Feb 14, 2024</span>
+            <span style="color:var(--clr-border)">·</span>
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--clr-muted)">13 min read</span>
+            <span class="tag tag--primary" style="font-size:.65rem">Machine Learning</span>
+          </div>
+          <h3 style="font-family:var(--font-serif);font-size:var(--text-lg);font-weight:700;line-height:1.3;margin-bottom:.6rem">Why Medical AI Is Hard: Distribution Shift, Data Scarcity, and Trust in Clinical Settings</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.7;margin-bottom:1rem">From benchmark performance to real-world deployment, the gap is enormous. This post explores the fundamental challenges that make deploying AI in healthcare uniquely difficult — and promising paths forward.</p>
+          <a href="#" class="btn btn--ghost" style="padding-left:0;font-size:var(--text-sm)">Read More →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Load More -->
+    <div style="text-align:center;margin-top:var(--sp-10)" class="reveal">
+      <button class="btn btn--outline">Load More Articles</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Footer ───────────────────────────────────────────────────── -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Kuldeep Sharma</div>
+        <p class="footer-desc">PhD Researcher in Machine Learning &amp; Computer Vision at IIT Delhi.</p>
+        <div class="footer-social">
+          <a href="#" title="GitHub">GH</a>
+          <a href="#" title="Google Scholar">GS</a>
+          <a href="#" title="LinkedIn">In</a>
+          <a href="#" title="Twitter/X">X</a>
+          <a href="#" title="Email">@</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Navigation</div>
+        <nav class="footer-links">
+          <a href="about.html">About</a>
+          <a href="research.html">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="projects.html">Projects</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer-heading">More</div>
+        <nav class="footer-links">
+          <a href="teaching.html">Teaching</a>
+          <a href="awards.html">Awards</a>
+          <a href="cv.html">CV</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Kuldeep Sharma.</span>
+      <span>Built with care &amp; deployed on GitHub Pages.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  // Blog search filter
+  const searchInput = document.getElementById('blog-search');
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase().trim();
+      document.querySelectorAll('.blog-card').forEach(card => {
+        const title   = card.querySelector('h3')?.textContent.toLowerCase() || '';
+        const excerpt = card.querySelector('p.text-muted')?.textContent.toLowerCase() || '';
+        card.style.display = (title.includes(query) || excerpt.includes(query)) ? '' : 'none';
+      });
+    });
+  }
+</script>
+</body>
+</html>
