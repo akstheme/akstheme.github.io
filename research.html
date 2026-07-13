@@ -1,197 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <!-- ===========================================
-         Basic Meta Information
-    ============================================ -->
-
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Research | Kuldeep Yadav</title>
-
-    <meta name="description"
-          content="Research areas of Dr. Kuldeep Yadav including Computer Vision, Deep Learning, Human Behaviour Understanding, Gesture Recognition, Medical Imaging, and Cyber Security.">
-
-    <meta name="keywords"
-          content="Kuldeep Yadav, Research, Computer Vision, Deep Learning, AI, Human Behaviour Analysis, Gesture Recognition, Cyber Security">
-
-    <meta name="author"
-          content="Kuldeep Yadav">
-
-    <meta name="robots"
-          content="index, follow">
-
-    <!-- ===========================================
-         Google Fonts
-    ============================================ -->
-
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
-          rel="stylesheet">
-
-    <!-- ===========================================
-         Bootstrap
-    ============================================ -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-
-    <!-- ===========================================
-         Font Awesome
-    ============================================ -->
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- ===========================================
-         AOS Animation
-    ============================================ -->
-
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"
-          rel="stylesheet">
-
-    <!-- ===========================================
-         Custom CSS
-    ============================================ -->
-
-    <link rel="stylesheet"
-          href="assets/css/style.css">
-
-    <link rel="stylesheet"
-          href="assets/css/responsive.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kuldeep Sharma's research areas in Machine Learning, Computer Vision, NLP, and Medical AI at IIT Delhi." />
+  <title>Research — Kuldeep Sharma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
-
 <body>
 
-    <!-- ===========================================
-                    Navigation
-    ============================================ -->
+<!-- ── Header ───────────────────────────────────────────────────── -->
+<header class="site-header" role="banner">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-brand">K<span>.</span>Sharma</a>
+    <nav id="nav-menu" class="nav-menu" role="navigation" aria-label="Main">
+      <a href="index.html"        class="nav-link">Home</a>
+      <a href="about.html"        class="nav-link">About</a>
+      <a href="research.html"     class="nav-link">Research</a>
+      <a href="publications.html" class="nav-link">Publications</a>
+      <a href="projects.html"     class="nav-link">Projects</a>
+      <a href="teaching.html"     class="nav-link">Teaching</a>
+      <a href="awards.html"       class="nav-link">Awards</a>
+      <a href="cv.html"           class="nav-link">CV</a>
+      <a href="gallery.html"      class="nav-link">Gallery</a>
+      <a href="blog.html"         class="nav-link">Blog</a>
+      <a href="contact.html"      class="nav-link btn btn--primary btn--sm" style="margin-left:.5rem">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-    <header>
+<!-- ── Page Hero ─────────────────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="container">
+    <p class="section-eyebrow">What I Explore</p>
+    <h1 class="page-hero__title">Research</h1>
+    <p class="page-hero__sub">Advancing the frontiers of machine perception, learning, and reasoning — from foundational theory to deployable systems.</p>
+  </div>
+</section>
 
-        <!-- Shared Navigation -->
+<!-- ── Research Areas ────────────────────────────────────────────── -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <p class="section-eyebrow">Focus Areas</p>
+      <h2 class="section-title">Research Areas</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="grid-3">
 
-    </header>
+      <div class="research-card reveal">
+        <div class="research-icon">🧠</div>
+        <div class="research-title">Deep Learning</div>
+        <p class="research-desc">Designing novel neural architectures for perception and reasoning tasks — from multi-head attention mechanisms and efficient vision transformers to mixture-of-experts models suitable for edge deployment.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem">
+          <span class="tag">Transformers</span>
+          <span class="tag">Neural Architecture Search</span>
+          <span class="tag">Attention Mechanisms</span>
+          <span class="tag">Knowledge Distillation</span>
+        </div>
+      </div>
 
-    <!-- ===========================================
-                  Page Banner
-    ============================================ -->
+      <div class="research-card reveal">
+        <div class="research-icon">👁️</div>
+        <div class="research-title">Computer Vision</div>
+        <p class="research-desc">Scene understanding, real-time object detection, dense prediction, 3D reconstruction, and video analysis using both convolutional networks and vision-transformer architectures at scale.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem">
+          <span class="tag">Object Detection</span>
+          <span class="tag">Segmentation</span>
+          <span class="tag">3D Reconstruction</span>
+          <span class="tag">Video Understanding</span>
+        </div>
+      </div>
 
-    <section id="page-banner">
+      <div class="research-card reveal">
+        <div class="research-icon">💬</div>
+        <div class="research-title">NLP &amp; Multimodal AI</div>
+        <p class="research-desc">Cross-modal reasoning, visual question answering, image captioning, and grounded language models that align visual representations with rich textual semantics for downstream tasks.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem">
+          <span class="tag">Visual QA</span>
+          <span class="tag">Image Captioning</span>
+          <span class="tag">Cross-modal Retrieval</span>
+          <span class="tag">LLMs</span>
+        </div>
+      </div>
 
-        <!-- Research Banner -->
+      <div class="research-card reveal">
+        <div class="research-icon">🏥</div>
+        <div class="research-title">Medical AI</div>
+        <p class="research-desc">Automated diagnosis and clinical decision support through AI analysis of chest X-rays, CT scans, histopathology slides, and retinal fundus images — bridging the gap between research and clinical deployment.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem">
+          <span class="tag">Radiology AI</span>
+          <span class="tag">Pathology</span>
+          <span class="tag">Clinical NLP</span>
+          <span class="tag">Federated Learning</span>
+        </div>
+      </div>
 
-    </section>
+      <div class="research-card reveal">
+        <div class="research-icon">🔄</div>
+        <div class="research-title">Self-Supervised Learning</div>
+        <p class="research-desc">Learning powerful visual representations from unlabeled data through contrastive objectives, masked autoencoders, and multi-view consistency, reducing dependence on costly annotated datasets.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem">
+          <span class="tag">Contrastive Learning</span>
+          <span class="tag">MAE</span>
+          <span class="tag">DINO</span>
+          <span class="tag">Pretraining</span>
+        </div>
+      </div>
 
-    <!-- ===========================================
-                Research Overview
-    ============================================ -->
+      <div class="research-card reveal">
+        <div class="research-icon">⚡</div>
+        <div class="research-title">Model Efficiency</div>
+        <p class="research-desc">Developing compact, fast, and accurate models through pruning, quantization, token merging, and neural architecture search — enabling AI deployment on mobile and embedded devices.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem">
+          <span class="tag">Pruning</span>
+          <span class="tag">Quantization</span>
+          <span class="tag">Token Merging</span>
+          <span class="tag">Edge AI</span>
+        </div>
+      </div>
 
-    <section id="research-overview">
+    </div>
+  </div>
+</section>
 
-        <!-- Brief Introduction -->
+<!-- ── Ongoing Projects ───────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Current Work</p>
+      <h2 class="section-title">Ongoing Projects</h2>
+      <div class="section-divider section-divider--left"></div>
+    </div>
 
-    </section>
+    <div class="timeline">
 
-    <!-- ===========================================
-                  Research Areas
-    ============================================ -->
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div style="display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin-bottom:.5rem">
+            <span class="tag tag--accent">Active · 2024–Present</span>
+            <span class="tag tag--primary">Medical AI</span>
+          </div>
+          <h3 style="font-family:var(--font-sans);font-size:var(--text-lg);font-weight:700;margin-bottom:.5rem">MedSight: Multimodal Clinical Report Generation</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.7">Developing a vision-language foundation model that generates structured radiology reports from chest X-rays and CT volumes. The system leverages a hierarchical cross-attention mechanism to align visual findings with clinical terminology, achieving state-of-the-art BLEU-4 and CIDEr scores on the MIMIC-CXR and Indiana University datasets. Funded by the Prime Minister Research Fellowship.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem">
+            <span class="tag">ViT</span><span class="tag">GPT-4</span><span class="tag">MIMIC-CXR</span><span class="tag">Clinical NLP</span>
+          </div>
+        </div>
+      </div>
 
-    <section id="research-areas">
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div style="display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin-bottom:.5rem">
+            <span class="tag tag--accent">Active · 2023–Present</span>
+            <span class="tag tag--primary">Model Efficiency</span>
+          </div>
+          <h3 style="font-family:var(--font-sans);font-size:var(--text-lg);font-weight:700;margin-bottom:.5rem">AdapTok: Adaptive Token Merging for Video Transformers</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.7">Investigating dynamic token reduction strategies for video understanding transformers. AdapTok learns to selectively merge spatially and temporally redundant tokens at inference time, reducing FLOPs by up to 65% with less than 1% accuracy drop on Kinetics-400, Something-Something v2, and ActivityNet benchmarks. Accepted at NeurIPS 2025.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem">
+            <span class="tag">Video Transformers</span><span class="tag">Token Merging</span><span class="tag">Kinetics-400</span>
+          </div>
+        </div>
+      </div>
 
-        <!-- Research Cards -->
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div style="display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin-bottom:.5rem">
+            <span class="tag tag--accent">Active · 2023–Present</span>
+            <span class="tag tag--primary">Self-Supervised Learning</span>
+          </div>
+          <h3 style="font-family:var(--font-sans);font-size:var(--text-lg);font-weight:700;margin-bottom:.5rem">UniSSL: Unified Self-Supervised Pre-Training for Vision and Language</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);line-height:1.7">A unified pre-training framework combining masked image modelling, contrastive multi-view learning, and cross-modal alignment objectives within a single training pipeline. UniSSL produces representations that transfer strongly to both unimodal (ImageNet, CIFAR) and multimodal (VQA, NLVR2) benchmarks, outperforming specialised pre-training schemes by 2–4%.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem">
+            <span class="tag">MAE</span><span class="tag">CLIP</span><span class="tag">Contrastive Learning</span><span class="tag">Transfer Learning</span>
+          </div>
+        </div>
+      </div>
 
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- ===========================================
-                Ongoing Research
-    ============================================ -->
+<!-- ── Collaborators ─────────────────────────────────────────────── -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <p class="section-eyebrow">The Network</p>
+      <h2 class="section-title">Collaborators</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="grid-3">
 
-    <section id="ongoing-research">
+      <div class="card reveal" style="text-align:center">
+        <div class="card-img" style="height:200px">
+          <img src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Prof. Ananya Mehta" style="object-fit:cover;width:100%;height:100%" />
+        </div>
+        <div class="card-body">
+          <h3 style="font-family:var(--font-sans);font-size:var(--text-md);font-weight:700">Prof. Ananya Mehta</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);margin:.25rem 0 .5rem">IIT Bombay — Computer Vision &amp; Robotics</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center">
+            <span class="tag">3D Vision</span>
+            <span class="tag">SLAM</span>
+          </div>
+        </div>
+      </div>
 
-        <!-- Current Research Projects -->
+      <div class="card reveal" style="text-align:center">
+        <div class="card-img" style="height:200px">
+          <img src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Dr. Liang Chen" style="object-fit:cover;width:100%;height:100%" />
+        </div>
+        <div class="card-body">
+          <h3 style="font-family:var(--font-sans);font-size:var(--text-md);font-weight:700">Dr. Liang Chen</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);margin:.25rem 0 .5rem">MIT CSAIL — NLP &amp; Multimodal Learning</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center">
+            <span class="tag">VQA</span>
+            <span class="tag">LLMs</span>
+          </div>
+        </div>
+      </div>
 
-    </section>
+      <div class="card reveal" style="text-align:center">
+        <div class="card-img" style="height:200px">
+          <img src="https://images.pexels.com/photos/3756681/pexels-photo-3756681.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Dr. Priya Gupta" style="object-fit:cover;width:100%;height:100%" />
+        </div>
+        <div class="card-body">
+          <h3 style="font-family:var(--font-sans);font-size:var(--text-md);font-weight:700">Dr. Priya Gupta</h3>
+          <p class="text-muted" style="font-size:var(--text-sm);margin:.25rem 0 .5rem">Google DeepMind — Medical AI</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center">
+            <span class="tag">Medical Imaging</span>
+            <span class="tag">Federated Learning</span>
+          </div>
+        </div>
+      </div>
 
-    <!-- ===========================================
-              Featured Publications
-    ============================================ -->
+    </div>
+  </div>
+</section>
 
-    <section id="featured-publications">
+<!-- ── Footer ───────────────────────────────────────────────────── -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Kuldeep Sharma</div>
+        <p class="footer-desc">PhD Researcher in Machine Learning &amp; Computer Vision at IIT Delhi.</p>
+        <div class="footer-social">
+          <a href="#" title="GitHub">GH</a>
+          <a href="#" title="Google Scholar">GS</a>
+          <a href="#" title="LinkedIn">In</a>
+          <a href="#" title="Twitter/X">X</a>
+          <a href="#" title="Email">@</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Navigation</div>
+        <nav class="footer-links">
+          <a href="about.html">About</a>
+          <a href="research.html">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="projects.html">Projects</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer-heading">More</div>
+        <nav class="footer-links">
+          <a href="teaching.html">Teaching</a>
+          <a href="awards.html">Awards</a>
+          <a href="cv.html">CV</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Kuldeep Sharma.</span>
+      <span>Built with care &amp; deployed on GitHub Pages.</span>
+    </div>
+  </div>
+</footer>
 
-        <!-- Related Publications -->
-
-    </section>
-
-    <!-- ===========================================
-               Research Collaborations
-    ============================================ -->
-
-    <section id="collaborations">
-
-        <!-- Collaborators & Institutions -->
-
-    </section>
-
-    <!-- ===========================================
-              Research Resources
-    ============================================ -->
-
-    <section id="resources">
-
-        <!-- Datasets, Code, Software -->
-
-    </section>
-
-    <!-- ===========================================
-               Future Research Vision
-    ============================================ -->
-
-    <section id="future-vision">
-
-        <!-- Research Roadmap -->
-
-    </section>
-
-    <!-- ===========================================
-                      Footer
-    ============================================ -->
-
-    <footer>
-
-        <!-- Shared Footer -->
-
-    </footer>
-
-    <!-- ===========================================
-            Bootstrap JavaScript
-    ============================================ -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- ===========================================
-                AOS Library
-    ============================================ -->
-
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-    <!-- ===========================================
-              Custom JavaScript
-    ============================================ -->
-
-    <script src="assets/js/main.js"></script>
-
+<script type="module" src="assets/js/main.js"></script>
 </body>
-
 </html>
